@@ -1,0 +1,141 @@
+/* Reset and Base Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0d0d0d;
+    color: #f2f2f2;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+a {
+    color: #ff4f9a;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* Navbar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 10%;
+    background-color: #111;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff4f9a;
+}
+
+.nav-links li {
+    display: inline;
+    margin-left: 1.5rem;
+}
+
+.nav-links a:hover {
+    color: #fff;
+}
+
+
+/* Home Section */
+
+.home-section {
+    padding: 4rem 10%;
+}
+
+.home-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+    /* allows stacking on small screens */
+}
+
+.home-text {
+    flex: 1;
+    min-width: 280px;
+}
+
+.home-image {
+    flex: 1;
+    text-align: center;
+    min-width: 250px;
+}
+
+.home-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #ff4f9a;
+}
+
+
+/* Sections */
+
+.section {
+    padding: 4rem 10%;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #ff4f9a;
+}
+
+
+/* Skills */
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.skills-list li {
+    background: #1a1a1a;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+}
+
+
+/* Projects */
+
+.project-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.project-card {
+    background: #1a1a1a;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border-left: 4px solid #ff4f9a;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    background: #111;
+    color: #aaa;
+}
