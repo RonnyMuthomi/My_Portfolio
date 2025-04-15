@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ronny Muthomi | Portfolio</title>
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
@@ -22,72 +22,83 @@
         </nav>
     </header>
 
-    <section id="home" class="home-section">
-        <div class="home-content">
-            <div class="home-text">
+    <section id="home " class="home-section ">
+        <div class="home-content ">
+            <div class="home-text ">
                 <h1>Hi, I'm Ronny Muthomi</h1>
                 <p>Junior Data Analyst passionate about turning data into meaningful insights.</p>
-                <a href="#projects" class="btn-pink">View Projects</a>
+                <a href="#projects " class="btn-pink ">View Projects</a>
             </div>
-            <div class="home-image">
-                <img src="/images/profile.jpg" alt="Ronny Muthomi" />
+            <div class="home-image ">
+                <img src="images/profile.jpg " alt="Ronny Muthomi " />
             </div>
         </div>
     </section>
 
-    <section id="about " class="section ">
-        <h2>About Me</h2>
+
+    <section id="skills" class="skills-section">
+        <h2>⚡ Technologies & Tools</h2>
+        <div class="badge-container">
+            <img src="https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
+            <img src="https://img.shields.io/badge/Kaggle-035a7d?style=for-the-badge&logo=kaggle&logoColor=white" alt="Kaggle" />
+            <img src="https://img.shields.io/badge/Anaconda-%2344A833.svg?style=for-the-badge&logo=anaconda&logoColor=white" alt="Anaconda" />
+            <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python" />
+            <img src="https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas" />
+            <img src="https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="Scikit-learn" />
+            <img src="https://img.shields.io/badge/NumPy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy" />
+            <img src="https://img.shields.io/badge/Matplotlib-%230A97B0.svg?style=for-the-badge&logo=matplotlib&logoColor=white" alt="Matplotlib" />
+            <img src="https://img.shields.io/badge/Seaborn-%23FF6F20.svg?style=for-the-badge&logo=seaborn&logoColor=white" alt="Seaborn" />
+
+            <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" alt="github" />
+        </div>
+    </section>
+
+    <section id="about" class="section-lightblue">
+        <h2>Personal Projects</h2>
         <p>
-            I’m a self-taught junior data analyst currently learning Python, SQL, Excel, and Tableau. I love working with data to uncover patterns and create actionable insights.
+            Links to several short projects I’ve been working on. Topics and techniques include: machine learning algorithms (retail location prediction, churn analysis, analysis of clicks on digital ads and others), deep learning algorithms (image classifiers, LSTM,
+            transfer learning), natural language processing applications (language models, sentiment analysis), time series analysis (vector error correction models in Finance), topic modeling, Bayesian structural Time Series, clustering algorithms, principal
+            component analysis (PCA), computational physics (quantum mechanics of many particles) and others. For more information about each project (description and code), hover the mouse over the pictures and click on them. I love working with data
+            to uncover patterns and create actionable insights.
         </p>
     </section>
 
-    <section id="skills " class="section ">
-        <h2>Skills</h2>
-        <ul class="skills-list ">
-            <li>Python</li>
-            <li>Excel</li>
-            <li>SQL</li>
-            <li>Pandas & NumPy</li>
-            <li>Tableau / Power BI</li>
-        </ul>
-    </section>
 
-    <section id="projects " class="section ">
+    <section id="projects" class="section-lightblue">
         <h2>Projects</h2>
-        <div class="project-grid ">
-            <div class="project-card ">
+        <div class="project-grid">
+            <div class="project-card">
                 <h3>Student Performance Dashboard</h3>
                 <p>Excel dashboard showing insights on attendance, grades, and activities.</p>
             </div>
-            <div class="project-card ">
+            <div class="project-card">
                 <h3>Sales Data Analysis</h3>
                 <p>Used Python and Pandas to clean, analyze, and visualize sales data.</p>
             </div>
+            <div class="project-card hidden">
+                <h3>Customer Churn Prediction</h3>
+                <p>Built a machine learning model to predict customer churn for a telecom company.</p>
+            </div>
+            <div class="project-card hidden">
+                <h3>Ad Click-Through Rate Analysis</h3>
+                <p>Analyzed digital ad performance using logistic regression and visualization tools.</p>
+            </div>
         </div>
+        <button id="showMoreProjects" class="btn-pink">Show More</button>
     </section>
 
-    <section id="contact " class="section ">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:ronnymuthomi@email.com ">ronnymuthomi@email.com</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/ronnymuthomi " target="_blank ">linkedin.com/in/ronnymuthomi</a></p>
-    </section>
+
+
+
 
     <footer>
         <p>&copy; 2025 Ronny Muthomi. All rights reserved.</p>
+        <p>Email: <a href="mailto:ronnymuthomi254@gmail.com">ronnymuthomi254@email.com</a></p>
+        <p>LinkedIn: <a href="www.linkedin.com/in/ronny-muthomi-014805262" target="_blank ">www.linkedin.com/in/ronny-muthomi-014805262</a></p>
     </footer>
 
-    <script>
-        // Smooth scrolling
-        document.querySelectorAll('a[href^="# "]').forEach(anchor => {
-            anchor.addEventListener("click ", function(e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute("href ")).scrollIntoView({
-                    behavior: "smooth "
-                });
-            });
-        });
-    </script>
+    <script src="./script/script.js"></script>
+
 </body>
 
 </html>
