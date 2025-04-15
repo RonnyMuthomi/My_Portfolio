@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ronny Muthomi | Portfolio</title>
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body>
+    <header>
+        <nav class=" navbar ">
+            <div class="logo ">Ronny Muthomi</div>
+            <ul class="nav-links ">
+                <li><a href="#home ">Home</a></li>
+                <li><a href="#about ">About</a></li>
+                <li><a href="#skills ">Skills</a></li>
+                <li><a href="#projects ">Projects</a></li>
+                <li><a href="#contact ">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="home-section">
+        <div class="home-content">
+            <div class="home-text">
+                <h1>Hi, I'm Ronny Muthomi</h1>
+                <p>Junior Data Analyst passionate about turning data into meaningful insights.</p>
+                <a href="#projects" class="btn-pink">View Projects</a>
+            </div>
+            <div class="home-image">
+                <img src="/images/profile.jpg" alt="Ronny Muthomi" />
+            </div>
+        </div>
+    </section>
+
+    <section id="about " class="section ">
+        <h2>About Me</h2>
+        <p>
+            I’m a self-taught junior data analyst currently learning Python, SQL, Excel, and Tableau. I love working with data to uncover patterns and create actionable insights.
+        </p>
+    </section>
+
+    <section id="skills " class="section ">
+        <h2>Skills</h2>
+        <ul class="skills-list ">
+            <li>Python</li>
+            <li>Excel</li>
+            <li>SQL</li>
+            <li>Pandas & NumPy</li>
+            <li>Tableau / Power BI</li>
+        </ul>
+    </section>
+
+    <section id="projects " class="section ">
+        <h2>Projects</h2>
+        <div class="project-grid ">
+            <div class="project-card ">
+                <h3>Student Performance Dashboard</h3>
+                <p>Excel dashboard showing insights on attendance, grades, and activities.</p>
+            </div>
+            <div class="project-card ">
+                <h3>Sales Data Analysis</h3>
+                <p>Used Python and Pandas to clean, analyze, and visualize sales data.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact " class="section ">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:ronnymuthomi@email.com ">ronnymuthomi@email.com</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/ronnymuthomi " target="_blank ">linkedin.com/in/ronnymuthomi</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Ronny Muthomi. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="# "]').forEach(anchor => {
+            anchor.addEventListener("click ", function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute("href ")).scrollIntoView({
+                    behavior: "smooth "
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
