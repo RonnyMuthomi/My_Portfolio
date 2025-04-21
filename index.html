@@ -7,17 +7,21 @@
     <title>Ronny Muthomi | Data Analyst Portfolio</title>
     <link rel="stylesheet" href="/css/style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-yH8E/0YVZKN6Jq9XxLf7uAWU2+Gu5MyP4TYVD8MCz7C/vw8B97kR6QJcgDwNdZ99EJ9dTjACwWiEGcT6Ic1Lkw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
 </head>
 
 <body>
     <header class="navbar">
         <div class="container nav-container">
-            <div class="logo">Ronny Muthomi</div>
-            <nav>
-                <ul class="nav-links">
+            <div class="logo">Victor</div>
+
+            <button class="hamburger" id="hamburger">&#9776;</button>
+
+            <nav class="mobile-sidebar">
+                <ul class="nav-links" id="nav-links">
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -25,23 +29,35 @@
         </div>
     </header>
 
+
+
     <section id="home" class="home-section">
-        <div class="container home-content">
+        <div class="container home-grid">
+            <div class="home-image">
+                <img id="img1" src="images/profile.jpg" alt="Ronny Muthomi" />
+            </div>
             <div class="home-text">
                 <h1>Hi, I'm Ronny Muthomi</h1>
-                <p>Junior Data Analyst passionate about turning data into meaningful insights. I have a strong foundation in data analysis, machine learning, and data visualization. I am eager to apply my skills to real-world challenges and contribute to
-                    data-driven decision-making.</p>
-                <p>With a background in Python, SQL, and data visualization tools, I am well-equipped to tackle complex data problems. I am committed to continuous learning and staying updated with the latest trends in data analysis and machine learning.</p>
-                <p>In my free time, I enjoy exploring new data analysis techniques, participating in Kaggle competitions, and contributing to open-source projects. I am excited about the opportunity to work with data and help organizations make informed
-                    decisions based on data-driven insights.</p>
-                <p>Feel free to reach out if you have any questions or if you'd like to connect! I am always open to discussing data analysis, machine learning, and potential collaborations.</p>
-                <a href="#projects" class="btn-primary">View Projects</a>
-            </div>
-            <div class="home-image">
-                <img id='img1' src="images/profile.jpg" alt="Ronny Muthomi" />
+                <p>
+                    Aspiring Data Science with a passion for transforming data into actionable insights. I'm currently honing my skills in Python, SQL, and data visualization as I work on real-world projects in predictive analytics and machine learning.
+                </p>
+                <p>
+                    From customer churn prediction to fraud detection models, I enjoy exploring data challenges that drive smarter decisions. I'm also active on Kaggle and constantly learning new techniques to stay ahead in the data field.
+                </p>
+                <p>
+                    I'm open to internships, collaborations, and entry-level roles where I can grow while contributing to meaningful data projects. Let’s connect!
+                </p>
+
+
+                <div class="button-group">
+                    <a href="#projects" class="btn-primary">View Projects</a>
+                    <a href="docs/personal cv.pdf" download class="btn-secondary">📄 Download Resume</a>
+                </div>
+
             </div>
         </div>
     </section>
+
 
     <section id="skills" class="skills-section">
         <div class="container">
@@ -64,10 +80,22 @@
     <section id="about" class="section-light">
         <div class="container">
             <h2>About Me</h2>
-            <p>Links to several short projects I’ve been working on. Topics and techniques include: machine learning algorithms (retail location prediction, churn analysis, analysis of clicks on digital ads and others), deep learning algorithms (image classifiers,
-                LSTM, transfer learning), natural language processing applications (language models, sentiment analysis), time series analysis (vector error correction models in Finance), topic modeling, Bayesian structural Time Series, clustering algorithms,
-                principal component analysis (PCA), computational physics (quantum mechanics of many particles) and others. For more information about each project (description and code), hover the mouse over the pictures and click on them. I love working
-                with data to uncover patterns and create actionable insights.</p>
+            <p>
+                I'm Ronny Muthomi, a Junior Data Scientist in training, passionate about transforming raw data into meaningful insights. I'm currently building a strong foundation in data analysis, statistics, and machine learning, and I'm excited about the endless possibilities
+                data science offers.
+            </p>
+            <p>
+                As a student, I’ve worked on academic and personal projects that involve data cleaning, visualization, and basic predictive modeling using tools like Python, SQL, and Tableau. I enjoy learning by doing whether it's through coursework, online challenges,
+                or self-initiated projects.
+            </p>
+            <p>
+                My interests include exploring patterns in data, building dashboards, and solving real-world problems using data. I’m constantly learning new tools and techniques to improve my skills and stay up-to-date with the evolving field of data science.
+            </p>
+            <p>
+                Feel free to check out my projects below I’m always open to feedback, collaboration, or connecting with fellow data enthusiasts!
+            </p>
+
+
         </div>
     </section>
 
@@ -108,10 +136,16 @@
     <section id="contact" class="contact-section">
         <div class="container">
             <h2>Contact</h2>
-            <p>Email: <a href="mailto:ronnymuthomi254@gmail.com">ronnymuthomi254@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/ronny-muthomi-014805262" target="_blank">linkedin.com/in/ronny-muthomi</a></p>
+            <div class="contact-icons">
+                <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/ronny-muthomi-014805262" target="_blank">LinkedIn</a></p>
+                <p><i class="fab fa-github"></i> <a href="https://github.com/ronnymuthomi" target="_blank">GitHub</a></p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:ronnymuthomi254@gmail.com">ronnymuthomi254@gmail.com</a></p>
+                <p><i class="fab fa-discord"></i> <span>Ronny#1234</span></p>
+                <p><i class="fas fa-phone"></i> <span>+254 793508479</span></p>
+            </div>
         </div>
     </section>
+
 
     <footer>
         <div class="container">

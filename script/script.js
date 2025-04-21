@@ -23,3 +23,25 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 });
+
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('nav-links');
+
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+});
+
+// Close menu when a link is clicked
+const links = document.querySelectorAll('.nav-links a');
+links.forEach(link => {
+    link.addEventListener('click', () => {
+        navLinks.classList.remove('show');
+    });
+});
+
+// Optional: Close menu when clicking outside
+document.addEventListener('click', (event) => {
+    if (!navLinks.contains(event.target) && !hamburger.contains(event.target)) {
+        navLinks.classList.remove('show');
+    }
+});
